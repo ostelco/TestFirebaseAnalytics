@@ -12,6 +12,8 @@
 		04C6CBE622B920CA00E42534 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04C6CBE422B920CA00E42534 /* Main.storyboard */; };
 		04C6CBE822B920CB00E42534 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 04C6CBE722B920CB00E42534 /* Assets.xcassets */; };
 		04C6CBEB22B920CB00E42534 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04C6CBE922B920CB00E42534 /* LaunchScreen.storyboard */; };
+		04C6CBF322B921DF00E42534 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 04C6CBF222B921DF00E42534 /* GoogleService-Info.plist */; };
+		1E49AB89FAB7B9007A0ECE42 /* Pods_TestFirebaseAnalytics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 399E578047A7DBDF45BC7BEF /* Pods_TestFirebaseAnalytics.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +24,10 @@
 		04C6CBE722B920CB00E42534 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		04C6CBEA22B920CB00E42534 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		04C6CBEC22B920CB00E42534 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		04C6CBF222B921DF00E42534 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		399E578047A7DBDF45BC7BEF /* Pods_TestFirebaseAnalytics.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TestFirebaseAnalytics.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6943AA1F2B19A68FD5F71C21 /* Pods-TestFirebaseAnalytics.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TestFirebaseAnalytics.release.xcconfig"; path = "Target Support Files/Pods-TestFirebaseAnalytics/Pods-TestFirebaseAnalytics.release.xcconfig"; sourceTree = "<group>"; };
+		D379FDF47A0D241CC6C41463 /* Pods-TestFirebaseAnalytics.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TestFirebaseAnalytics.debug.xcconfig"; path = "Target Support Files/Pods-TestFirebaseAnalytics/Pods-TestFirebaseAnalytics.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +35,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1E49AB89FAB7B9007A0ECE42 /* Pods_TestFirebaseAnalytics.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,6 +47,8 @@
 			children = (
 				04C6CBDF22B920CA00E42534 /* TestFirebaseAnalytics */,
 				04C6CBDE22B920CA00E42534 /* Products */,
+				BC79F3B9433B5C10048AEA8A /* Pods */,
+				A06E93E9B19DB85E06B31B39 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -54,6 +63,7 @@
 		04C6CBDF22B920CA00E42534 /* TestFirebaseAnalytics */ = {
 			isa = PBXGroup;
 			children = (
+				04C6CBF222B921DF00E42534 /* GoogleService-Info.plist */,
 				04C6CBE022B920CA00E42534 /* AppDelegate.swift */,
 				04C6CBE222B920CA00E42534 /* ViewController.swift */,
 				04C6CBE422B920CA00E42534 /* Main.storyboard */,
@@ -64,6 +74,23 @@
 			path = TestFirebaseAnalytics;
 			sourceTree = "<group>";
 		};
+		A06E93E9B19DB85E06B31B39 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				399E578047A7DBDF45BC7BEF /* Pods_TestFirebaseAnalytics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		BC79F3B9433B5C10048AEA8A /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				D379FDF47A0D241CC6C41463 /* Pods-TestFirebaseAnalytics.debug.xcconfig */,
+				6943AA1F2B19A68FD5F71C21 /* Pods-TestFirebaseAnalytics.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -71,9 +98,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 04C6CBEF22B920CB00E42534 /* Build configuration list for PBXNativeTarget "TestFirebaseAnalytics" */;
 			buildPhases = (
+				6C6B83803DC8D069219D4CC0 /* [CP] Check Pods Manifest.lock */,
 				04C6CBD922B920CA00E42534 /* Sources */,
 				04C6CBDA22B920CA00E42534 /* Frameworks */,
 				04C6CBDB22B920CA00E42534 /* Resources */,
+				780D0DFC206C4242259C388B /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -125,10 +154,60 @@
 				04C6CBEB22B920CB00E42534 /* LaunchScreen.storyboard in Resources */,
 				04C6CBE822B920CB00E42534 /* Assets.xcassets in Resources */,
 				04C6CBE622B920CA00E42534 /* Main.storyboard in Resources */,
+				04C6CBF322B921DF00E42534 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		6C6B83803DC8D069219D4CC0 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TestFirebaseAnalytics-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		780D0DFC206C4242259C388B /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TestFirebaseAnalytics/Pods-TestFirebaseAnalytics-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/GoogleUtilities/GoogleUtilities.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleUtilities.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-TestFirebaseAnalytics/Pods-TestFirebaseAnalytics-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		04C6CBD922B920CA00E42534 /* Sources */ = {
@@ -280,6 +359,7 @@
 		};
 		04C6CBF022B920CB00E42534 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D379FDF47A0D241CC6C41463 /* Pods-TestFirebaseAnalytics.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -289,7 +369,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = se.norensikt.TestFirebaseAnalytics;
+				PRODUCT_BUNDLE_IDENTIFIER = sg.redotter.TestFirebaseAnalytics;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -298,6 +378,7 @@
 		};
 		04C6CBF122B920CB00E42534 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6943AA1F2B19A68FD5F71C21 /* Pods-TestFirebaseAnalytics.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -307,7 +388,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = se.norensikt.TestFirebaseAnalytics;
+				PRODUCT_BUNDLE_IDENTIFIER = sg.redotter.TestFirebaseAnalytics;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
